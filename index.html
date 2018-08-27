@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shorcut icon" type="image/png" href="./images/cf_favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,113 +21,127 @@
         <header>
           <div class="headerimage"><img src="images/cf_favicon.png" width="150" height="150" alt="Charity Finder"></div>
           <h1>CHARITY FINDER</h1>
+          <h2>FIND OUT WHAT TYPE OF PHILANTHROPIST YOU ARE!</h2>
         </header>
-        <h2>FIND OUT WHAT TYPE OF PHILANTHROPIST YOU ARE!</h2>
       <div class="quiz">
         <div class="stepheader">STEP 1 <span><br>Take The Quiz</br></span></div>
-        <main class="questions"><strong>Question 1 </strong><br>If you were given $1M, what would you do with it?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>Go on a safari</li>
-          <li class="environment"><strong>B </strong>Travel around the world</li>
-          <li class="disaster"><strong>C </strong>Donate to hurricane victims</li>
-          <li class="education"><strong>D </strong>Self-improvement</li>
-          <li class="health"><strong>E </strong>Pay for college education</li>
-          <li class="human"><strong>F </strong>Donate to local women's shelter</li>
-        </ul>
-        <main class="questions"><strong>Question 2 </strong><br>What is your spirit animal?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>Lion: Confident</li>
-          <li class="environment"><strong>B </strong>Rabbit: Intuitive</li>
-          <li class="disaster"><strong>C </strong>Horse: Adventurous</li>
-          <li class="education"><strong>D </strong>Eagle: Wise</li>
-          <li class="health"><strong>E </strong>Fox: Quick-Thinking</li>
-          <li class="human"><strong>F </strong>Dog: Loyal</li>
-        </ul>
-        <main class="questions"><strong>Question 3 </strong><br>What is the first thing you drink in the morning?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>Black Tea</li>
-          <li class="environment"><strong>B </strong>Green Tea</li>
-          <li class="disaster"><strong>C </strong>Water</li>
-          <li class="education"><strong>D </strong>Smoothie</li>
-          <li class="health"><strong>E </strong>Coffee</li>
-          <li class="human"><strong>F </strong>Orange Juice</li>
-        </ul>
-        <main class="questions"><strong>Question 4 </strong><br>What is your favorite sport to watch?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>Soccer</li>
-          <li class="environment"><strong>B </strong>Basketball</li>
-          <li class="disaster"><strong>C </strong>Hockey</li>
-          <li class="education"><strong>D </strong>Golf</li>
-          <li class="health"><strong>E </strong>Chess</li>
-          <li class="human"><strong>F </strong>Baseball</li>
-        </ul>
+        <form id="charquiz" name="charquiz">
+
+          <main class="questions"><strong>Question 1 </strong><br>If you were given $1M, what would you do with it?</br></main>
+          <ul>
+            <li><input type="radio" id="animals" name="q1" value="animals" checked> Go on a safari</li>
+            <li><input type="radio" id="environment" name="q1" value="environment"> Travel around the world</li>
+            <li><input type="radio" id="disaster" name="q1" value="disaster"> Donate to hurricane victims</li>
+            <li><input type="radio" id="education" name="q1" value="education"> Self-improvement</li>
+            <li><input type="radio" id="health" name="q1" value="health"> Pay for college education</li>
+            <li><input type="radio" id="human" name="q1" value="human"> Donate to local women's shelter</li>
+          </ul>
+
+          <main class="questions"><strong>Question 2 </strong><br>What is your spirit animal?</br></main>
+          <ul>
+            <li><input type="radio" id="animals" name="q2" value="animals" checked> Lion: Confident</li>
+            <li><input type="radio" id="environment" name="q2" value="environment"> Rabbit: Intuitive</li>
+            <li><input type="radio" id="disaster" name="q2" value="disaster"> Horse: Adventurous</li>
+            <li><input type="radio" id="education" name="q2" value="education"> Eagle: Wise</li>
+            <li><input type="radio" id="health" name="q2" value="health"> Fox: Quick-Thinking</li>
+            <li><input type="radio" id="human" name="q2" value="human"> Dog: Loyal</li>
+          </ul>
+        
+          <main class="questions"><strong>Question 3 </strong><br>What is the first thing you drink in the morning?</br></main>
+          <ul>
+            <li><input type="radio" id="animals" name="q3" value="animals" checked> Black Tea</li>
+            <li><input type="radio" id="environment" name="q3" value="environment"> Green Tea</li>
+            <li><input type="radio" id="disaster" name="q3" value="disaster"> Water</li>
+            <li><input type="radio" id="education" name="q3" value="education"> Smoothie</li>
+            <li><input type="radio" id="health" name="q3" value="health"> Coffee</li>
+            <li><input type="radio" id="human" name="q3" value="human"> Orange Juice</li>
+          </ul>
+        
+          <main class="questions"><strong>Question 4 </strong><br>What is your favorite sport to watch?</br></main>
+          <ul>
+            <li><input type="radio" id="animals" name="q4" value="animals" checked> Soccer</li>
+            <li><input type="radio" id="environment" name="q4" value="environment"> Basketball</li>
+            <li><input type="radio" id="disaster" name="q4" value="disaster"> Hockey</li>
+            <li><input type="radio" id="education" name="q4" value="education"> Golf</li>
+            <li><input type="radio" id="health" name="q4" value="health"> Chess</li>
+            <li><input type="radio" id="human" name="q4" value="human"> Baseball</li>
+          </ul>
+        
         <main class="questions"><strong>Question 5 </strong><br>Who is your hero?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>My Pet</li>
-          <li class="environment"><strong>B </strong>My Child</li>
-          <li class="disaster"><strong>C </strong>My Local Police / Firefighers</li>
-          <li class="education"><strong>D </strong>My Parents</li>
-          <li class="health"><strong>E </strong>My Teacher</li>
-          <li class="human"><strong>F </strong>Oprah</li>
-        </ul>
+         <ul>
+            <li><input type="radio" id="animals" name="q5" value="animals" checked> My Pet</li>
+            <li><input type="radio" id="environment" name="q5" value="environment"> My Child</li>
+            <li><input type="radio" id="disaster" name="q5" value="disaster"> My Local Police / Firefighters</li>
+            <li><input type="radio" id="education" name="q5" value="education"> My Parents</li>
+            <li><input type="radio" id="health" name="q5" value="health"> My Teacher</li>
+            <li><input type="radio" id="human" name="q5" value="human"> Oprah</li>
+          </ul>
+
         <main class="questions"><strong>Question 6 </strong><br>Who is your favorite celebrity?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>Jon Stewart</li>
-          <li class="environment"><strong>B </strong>Leonardo diCaprio</li>
-          <li class="disaster"><strong>C </strong>Sandra Bullock</li>
-          <li class="education"><strong>D </strong>Demi Lovato</li>
-          <li class="health"><strong>E </strong>Magic Johnson</li>
-          <li class="human"><strong>F </strong>Kanye West</li>
-        </ul>
-        <main class="questions"><strong>Question 7 </strong><br>Who do you think is/was the most influential US First Lady?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>Florence Harding</li>
-          <li class="environment"><strong>B </strong>Eleanor Roosevelt</li>
-          <li class="disaster"><strong>C </strong>Melania Trump</li>
-          <li class="education"><strong>D </strong>Hillary Clinton</li>
-          <li class="health"><strong>E </strong>Michelle Obama</li>
-          <li class="human"><strong>F </strong>Betty Ford</li>
-        </ul>
-        <main class="questions"><strong>Question 8 </strong><br>What is the scariest trend since 2000?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>Animal Extinction</li>
-          <li class="environment"><strong>B </strong>Climate Change</li>
-          <li class="disaster"><strong>C </strong>9/11</li>
-          <li class="education"><strong>D </strong>GMOs</li>
-          <li class="health"><strong>E </strong>Lack of Access to Free Education</li>
-          <li class="human"><strong>F </strong>Diminishing Human Rights</li>
-        </ul>
-        <main class="questions"><strong>Question 9 </strong><br>What is your favorite quote?</br></main>
-        <ul class="questionlist">
-          <li class="animals"><strong>A </strong>"Until one has loved an animal, a part of one's soul remains unawakened."</li>
-          <li class="environment"><strong>B </strong>“Earth provides enough to satisfy every man's needs, but not every man's greed.”</li>
-          <li class="disaster"><strong>C </strong>"You need to embrace change if the alternative is disaster."</li>
-          <li class="education"><strong>D </strong>"All the money in the world can't buy you back good health."</li>
-          <li class="health"><strong>E </strong>"Education is the most powerful weapon which you can use to change the world."</li>
-          <li class="human"><strong>F </strong>"The rights of every man are diminished when the rights of one man are threatened."</li>
-        </ul>
+         <ul>
+            <li><input type="radio" id="animals" name="q6" value="animals" checked> Jon Stewart</li>
+            <li><input type="radio" id="environment" name="q6" value="environment"> Leonardo DiCaprio</li>
+            <li><input type="radio" id="disaster" name="q6" value="disaster"> Sandra Bullock</li>
+            <li><input type="radio" id="education" name="q6" value="education"> Demi Lovato</li>
+            <li><input type="radio" id="health" name="q6" value="health"> Magic Johnson</li>
+            <li><input type="radio" id="human" name="q6" value="human"> Kanye West</li>
+          </ul>
+
+        <main class="questions"><strong>Question 7 </strong><br>What is the scariest trend since 2000?</br></main>
+         <ul>
+            <li><input type="radio" id="animals" name="q7" value="animals" checked> Animal Extinction</li>
+            <li><input type="radio" id="environment" name="q7" value="environment"> Climate Change</li>
+            <li><input type="radio" id="disaster" name="q7" value="disaster"> 9/11</li>
+            <li><input type="radio" id="education" name="q7" value="education"> GMOs</li>
+            <li><input type="radio" id="health" name="q7" value="health"> Lack of Access to Free Education</li>
+            <li><input type="radio" id="human" name="q7" value="human"> Dimishing Human Rights</li>
+          </ul>
+
+        <main class="questions"><strong>Question 8 </strong><br>What is your favorite quote?</br></main>
+         <ul>
+            <li><input type="radio" id="animals" name="q8" value="animals" checked> "Until one has loved an animal, a part of one's soul remains unawakened."</li>
+            <li><input type="radio" id="environment" name="q8" value="environment"> “Earth provides enough to satisfy every man's needs, but not every man's greed.”</li>
+            <li><input type="radio" id="disaster" name="q8" value="disaster"> "You need to embrace change if the alternative is disaster."</li>
+            <li><input type="radio" id="education" name="q8" value="education"> "All the money in the world can't buy you back good health."</li>
+            <li><input type="radio" id="health" name="q8" value="health"> "Education is the most powerful weapon which you can use to change the world."</li>
+            <li><input type="radio" id="human" name="q8" value="human"> "The rights of every man are diminished when the rights of one man are threatened."</li>
+          </ul>
+
       </div>
-      <button id="submit">SUBMIT ANSWERS</button>
-      <div class="results">
+      <input id="button" type="button" value="SUBMIT ANSWERS" onClick="check();">
+    </form>
+ 
+    <div class="results">
         <div class="stepheader">STEP 2 <span><br>Get Your Results</br></span></div>
-        <h4>Your Cause Is:</h4>
+        <h4 id="myresult">Your Cause Is: <br><span>TEST</span></h4>
       </div>
+
       <div class="stepheader">STEP 3 <span><br>How To Make A Difference</br></span></div>
       <h3>This best describes my current lifestyle:</h3>
+      
       <div class="timeormoney">
         <main>I am introverted and have money to spare<br>
         <img src="https://media.giphy.com/media/3oFzmqENRBkRTRfLcA/giphy.gif" alt="" width="375px" height="100%" /></main>
       <main>I spent all my money but I have time to spare<br>
         <img src="https://media.giphy.com/media/4y0hL2EY2aUIE/giphy.gif" alt="" width="375px" height="100%" /></main>
       </div>
+      
       <div class="stepheader">STEP 4 <span><br>Where To Make a Difference</br></span></div>
       <main>Because of your choice above, we have determined the best opportunities for making the world a better place are:</main>
+      <div id="money">
+        <a href="https://www.charities.org/charities_list">
+        <img src="./images/charitylogo.png" alt="" width="375px" height="100%"></a>
+      </div>
+      <div id="map" style="width:375px;height:375px;background:tomato">MAP PLACEHOLDER</div>
+      
       <footer>
         <nav class="footerlist">
-          <nav><a href="#about">About Us</a></nav>
-          <nav><a href="#contact">Get In Touch</a></nav>
+          <nav><a href="http://www.responsibleadults.co/" target="_blank">About Us</a></nav>
+          <nav><a href="http://www.responsibleadults.co/" target="_blank">Get In Touch</a></nav>
         </ul>
       </div>
-      <script src='main.js'></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
   </body>
 </html>

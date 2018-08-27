@@ -3,14 +3,15 @@
 }
 
 .progresschart {
+	visibility: hidden;
 	position: fixed;
 	right: 0;
-	margin-top: 20px;
+	margin: 20px 10px 0px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	width: 100px;
+	width: 65px;
 	font-family: Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
@@ -22,10 +23,6 @@
 	background-color: tomato;
 	border: 2px solid white;
 	margin: 5px 0px 0px 0px;
-}
-
-.header {
-	padding: 20px;
 }
 
 .headerimage {
@@ -40,20 +37,17 @@ img {
 
 header {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: left;
 	align-items: center;
 	color: black;
 	font-family: Anton, sans-serif;
-	font-size: 50px;
-	max-width: 88%;
 }
 
 h1 {
 	font-family: Anton, sans-serif;
 	font-size: 80px;
 	letter-spacing: 10px;
-	margin-left: 175px;
 }
 
 h2 {
@@ -61,7 +55,6 @@ h2 {
 	font-size: 20px;
 	font-weight: lighter;
 	letter-spacing: 5px;
-	margin: -50px 0px 75px 300px;
 }
 
 h3 {
@@ -75,11 +68,11 @@ h3 {
 	border-left: 4px solid tomato;
 	border-right: 4px solid tomato;
 	border-top-left-radius: 20px;
-	max-width: 88%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h4 {
+	visibility: hidden;
 	font-family: Anton, sans-serif;
 	font-size: 70px;
 	letter-spacing: 5px;
@@ -88,14 +81,13 @@ h4 {
 }
 
 .stepheader {
-	margin: 75px 20px 20px 20px;
+	margin: 50px 20px 0px 20px;
 	padding: 10px;
 	background-color: black;
 	border: 4px solid black;
 	color: white;
 	font-family: Anton, sans-serif;
 	font-size: 40px;
-	max-width: 88%;
 }
 
 .stepheader:hover {
@@ -119,20 +111,15 @@ strong {
 }
 
 .questions {
-	margin: 20px;
+	margin: 50px 20px 20px 20px;
 	padding: 10px;
 	border: 4px solid tomato;
 	background-color: white;
 	line-height: 25px;
-	max-width: 88%;
 }
 
-.questionlist {
-	margin: 5px 0px 40px 100px;
-}
-
-button {
-	margin: 5px 0px 20px 100px;
+input [type=button] {
+	margin: 50px 0px 0px 20px;
 	padding: 10px;
 	background-color: tomato;
 	color: white;
@@ -142,10 +129,26 @@ button {
 	border-radius: 4px;
 }
 
+#button {
+	margin: 50px 0px 0px 20px;
+	padding: 10px;
+	background-color: tomato;
+	color: white;
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	border: 4px solid white;
+	border-radius: 4px;
+}
+
+#button:hover {
+	background-color: black;
+	color: white;
+}
+
 li {
+	margin: 0px 0px 0px 50px;
 	padding: 5px;
-	width: 55%;
-	border-bottom: 2px solid tomato;
+	width: 80%;
 	vertical-align: middle;
 }
 
@@ -175,7 +178,6 @@ main {
 	border-right: 4px solid tomato;
 	border-bottom: 4px solid tomato;
 	border-bottom-right-radius: 20px;
-	max-width: 88%;
 }
 
 a:link {
@@ -191,6 +193,19 @@ a:visited {
 	color: tomato;
 }
 
+#money {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 20px 20px 20px;
+	padding: 10px;
+}
+
+#map {
+	margin: auto;
+}
+
 footer {
 	background-color: black;
 	color: white;
@@ -198,7 +213,6 @@ footer {
 	margin: 20px;
 	padding: 10px;
 	border: 4px solid black;
-	max-width: 88%;
 	line-height: 30px;
 }
 
@@ -206,10 +220,30 @@ footer:hover {
 	background: #000 url("https://media.giphy.com/media/A50g5mB648OYM/giphy.gif");
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
 	.timeormoney {
 		flex-direction: column;
 		flex-wrap: nowrap;
 		height: 100%;
+		line-height: 20px;
+	}
+
+	.progresschart {
+		display: none;
+	}
+
+	img {
+		max-width: 100%
+	}
+
+	h1 {
+		text-align: center;
+		margin: 0px 0px 0px 20px;
+		font-size: 50px;
+	}
+
+	h2 {
+		text-align: center;
+		margin: 0px 0px 0px 20px;
 	}
 }
